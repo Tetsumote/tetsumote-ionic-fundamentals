@@ -6,8 +6,29 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding" [fullscreen]="true">
+  
+  <ion-button fill="outline" color="danger" shape="round">
+    add Todo
+  </ion-button>
+  
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
+  <ion-list>
+    <ion-item *ngFor="let letintem of [1,1,1,1,1,1,1,1,1];let i = index">
+      <ion-badge color="primary" mode="ios" slot="start">{{ i+1 }}</ion-badge>
+      <ion-label>
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </ion-label>
+      <ion-badge color="danger" mode="ios" slot="end">
+        <ion-icon name="trash"></ion-icon>
+      </ion-badge>
+    </ion-item>
+  </ion-list>
 
-  <app-explore-container name="Home page"></app-explore-container>
 </ion-content>
