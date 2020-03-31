@@ -8,32 +8,12 @@
 
 <ion-content class="ion-padding" [fullscreen]="true">
   
-  <ion-button fill="outline" color="danger" shape="round">
-    add Todo
-  </ion-button>
-  
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+  <ion-card *ngFor="let letintem of [1,1,1,1,1,1,1,1,1];let i = index">
+    <ion-img src="assets/dummy.jpg"></ion-img>
+    <ion-card-content>
+      <ion-card-title>Awesome Title</ion-card-title>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dolore?</p>
+    </ion-card-content>
+  </ion-card>
 
-  <ion-list>
-    <ion-item *ngFor="let letintem of [1,1,1,1,1,1,1,1,1];let i = index">
-      <ion-badge color="primary" mode="ios" slot="start">{{ i+1 }}</ion-badge>
-      <ion-label>
-        <h2>Lorem, ipsum.</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </ion-label>
-      <ion-badge color="danger" mode="ios" slot="end">
-        <ion-icon name="trash"></ion-icon>
-      </ion-badge>
-    </ion-item>
-  </ion-list>
-
-<<<<<<< HEAD
 </ion-content>
-=======
-  <app-explore-container name="Home page"></app-explore-container>
-</ion-content> 
->>>>>>> c3935d8ee07bbb7c894f1a31496bb8c87500ec75
