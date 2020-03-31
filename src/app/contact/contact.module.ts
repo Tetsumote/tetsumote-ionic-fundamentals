@@ -8,6 +8,7 @@ import { ContactPageRoutingModule } from './contact-routing.module';
 
 import { ContactPage } from './contact.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
     FormsModule,
     IonicModule,
     ExploreContainerComponentModule,
-    ContactPageRoutingModule
+    ContactPageRoutingModule,
+    ComponentsModule,
   ],
   declarations: [ContactPage]
 })

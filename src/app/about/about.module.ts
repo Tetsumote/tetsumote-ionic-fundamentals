@@ -8,6 +8,7 @@ import { AboutPageRoutingModule } from './about-routing.module';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { AboutPage } from './about.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { AboutPage } from './about.page';
     FormsModule,
     IonicModule,
     ExploreContainerComponentModule,
-    AboutPageRoutingModule
+    AboutPageRoutingModule,
+    ComponentsModule,
   ],
   declarations: [AboutPage]
 })
