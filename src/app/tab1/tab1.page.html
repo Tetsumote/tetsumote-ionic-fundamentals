@@ -8,12 +8,26 @@
 
 <ion-content class="ion-padding" [fullscreen]="true">
   
-  <ion-card *ngFor="let letintem of [1,1,1,1,1,1,1,1,1];let i = index">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size=12 size-lg=3 size-md=4 size-sm=6 size-xs=12 *ngFor="let letintem of [1,1,1,1,1,1,1,1,1];let i = index">
+        <ion-card>
+          <ion-img src="assets/dummy.jpg"></ion-img>
+          <ion-card-content>
+            <ion-card-title>Awesome Title</ion-card-title>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dolore?</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- <ion-card *ngFor="let letintem of [1,1,1,1,1,1,1,1,1];let i = index">
     <ion-img src="assets/dummy.jpg"></ion-img>
     <ion-card-content>
       <ion-card-title>Awesome Title</ion-card-title>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dolore?</p>
     </ion-card-content>
-  </ion-card>
+  </ion-card> -->
 
 </ion-content>
